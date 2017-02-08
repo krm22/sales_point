@@ -13,7 +13,7 @@ class SalespointController extends Controller {
         // Get all documents and filter with queries string (req.query : ex. http://domain.ext/api/?query=string)
         this.model
         .find(req.query.id)
-        .populate('product')
+        .populate('products')
         .exec((err, documents) => {
             res.json(documents)
         })
@@ -22,7 +22,7 @@ class SalespointController extends Controller {
        // Get all documents and filter with queries string (req.query : ex. http://domain.ext/api/?query=string)
        this.model
        .findById(req.params.id)
-       .populate('product')
+       .populate('products')
        .exec((err, documents) => {
            res.json(documents)
        })
@@ -38,7 +38,7 @@ class SalespointController extends Controller {
                 .findById(document._id, {
                   password: 0
                 })
-                .populate('Product')
+                .populate('products')
                 .exec((err, product) => {
 
                   res.json(product)
@@ -59,7 +59,7 @@ class SalespointController extends Controller {
               .findById(req.params.id, {
                 password: 0
               })
-              .populate('product')
+              .populate('products')
               .exec((err, product) => {
                 res.json(product)
               })

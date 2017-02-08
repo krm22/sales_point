@@ -13,7 +13,7 @@ module.exports = mongoose.model('Product', new mongoose.Schema({
     type: String,
   },
   price : {
-    type: Number,
+    type: String,
   },
   owner: {
       type: mongoose.Schema.Types.ObjectId,

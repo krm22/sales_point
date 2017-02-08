@@ -3,17 +3,11 @@ let mongoose = require('mongoose');
 module.exports = mongoose.model('Owner', new mongoose.Schema({
 
     firstname: {
-      type: String,
-      require: true
+      type: String
     },
     lastname:{
-      type: String,
+      type: String
     },
-    email: {
-      type: String,
-      require: true,
-      unique: true
-   },
     password: {
       type: String
    },

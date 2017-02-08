@@ -42,7 +42,7 @@ class ProductsController extends Controller {
                 .findById(document._id, {
                   password: 0
                 })
-                .populate('Owner')
+                .populate('owner')
                 .exec((err, product) => {
 
                   res.json(product)
