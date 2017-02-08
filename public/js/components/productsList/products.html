@@ -1,0 +1,15 @@
+
+<div class="col cardcontainer" ng-repeat="products in $ctrl.products">
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img ng-src="{{products.photo}}">
+        <a ui-sref="product.item({id:products._id})" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+       <div class="card-content">
+         <h3>{{products.name}}</h3>
+        <p>{{products.description | limitTo: 100}}</p>
+      </div>
+    </div>
+  </div>
+</div>

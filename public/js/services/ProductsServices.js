@@ -48,7 +48,7 @@
                             if (xhr.status === 200) {
                                 resolve()
                             } else {
-                                reject()
+                              
                             }
                         }
                     };

@@ -10,7 +10,7 @@ module.exports = mongoose.model('Owner', new mongoose.Schema({
     },
     password: {
       type: String
-   },
+    },
     avatar:{
       type: String
    }

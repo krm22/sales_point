@@ -1,0 +1,20 @@
+<div class="col cardcontainer">
+  <div class="col s12 m6">
+    <div class="card">
+      <div class="card-image">
+        <img ng-src="{{$ctrl.product.photo}}">
+        <a ng-hide="$ctrl.editMode" ng-click="$ctrl.edit($ctrl.product)" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">edit</i></a>
+      </div>
+       <div class="card-content">
+           <label ng-if="$ctrl.product.editMode" for="textarea1">Product Name</label>
+          <span ng-if="!$ctrl.product.editMode" class="card-title">{{$ctrl.product.name}}</span>
+          <input ng-if="$ctrl.product.editMode" id="icon_prefix" type="text" class="validate" ng-model="$ctrl.product.name">
+          <p ng-if="!$ctrl.product.editMode">{{$ctrl.product.description}}</p>
+          <label ng-if="$ctrl.product.editMode" for="textarea1">Description</label>
+          <textarea ng-if="$ctrl.product.editMode" id="textarea1" class="materialize-textarea" ng-model="$ctrl.product.description"></textarea>
+          <a ng-click="$ctrl.delete($ctrl.product)" ng-if="!$ctrl.product.editMode" class="waves-effect waves-light btn"><i class="material-icons left">delete</i></a>
+          <a ui-sref="product.new({id:products._id})" ng-if="$ctrl.product.editMode" class="waves-effect waves-light btn"><i class="material-icons left">add</i></a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+
+<div class="col cardcontainer" ng-repeat="products in $ctrl.products">
+  <div class="col s12 m10">
+    <div class="card">
+      <div class="card-image">
+        <img ng-src="{{products.owner.avatar}}">
+
+        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      </div>
+      <div class="card-content">
+          <span class="card-title">{{products.owner.firstname}}</span>
+            <span class="card-title">{{products.owner.lastname}}</span>
+          <a ui-sref="products.list"><img class="circle responsive-img cardavatar right" ></a>
+      </div>
+    </div>
+  </div>
+</div>
