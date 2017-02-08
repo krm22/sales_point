@@ -1,0 +1,45 @@
+{
+  "name": "sales_point",
+  "version": "1.0.0",
+  "description": "sales_app",
+  "main": "sales-app.js",
+  "scripts": {
+    "start": "NODE_ENV=production node test-app",
+      "dev": "brunch watch --server"
+  },
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-cookies": "^1.5.9",
+    "angular-materialize": "^0.2.1",
+    "angular-ui-router": "^0.3.2",
+    "body-parser": "^1.15.2",
+    "formidable": "^1.0.17",
+    "fs": "0.0.1-security",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.9",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.5",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2"
+    },
+    "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
+    "babel-brunch": "^6.0.6",
+    "brunch": "^2.9.1",
+    "clean-css-brunch": "^2.0.0",
+    "css-brunch": "^2.6.1",
+    "javascript-brunch": "^2.0.0",
+    "sass-brunch": "^2.7.0"
+    },
+   "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krm22/sales_point.git"
+   },
+   "author": "Karl Mouat",
+   "license": "MIT",
+   "bugs": {
+    "url": "https://github.com/krm22/sales_point/issues"
+   },
+   "homepage": "https://github.com/krm22/sales_point#readme"
+}
