@@ -5,7 +5,7 @@
 
 Sales Project.  
 
-> _This Project is a project for wild code school._  
+> _This Project is a project for wild code school exam. It had a time limit of one day to show what we could do_  <
 
 
 ### Prerequisites
